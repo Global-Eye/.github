@@ -1,0 +1,86 @@
+name: Feature
+description: Nueva funcionalidad a implementar
+title: "APP | Módulo | Sección | Funcionalidad"
+labels: ["feature"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Completa esta plantilla para documentar la nueva funcionalidad.
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: ¿Qué se quiere lograr?
+      placeholder: "Ej: Implementar búsqueda de clientes con filtros avanzados"
+    validations:
+      required: true
+
+  - type: textarea
+    id: historia-usuario
+    attributes:
+      label: Historia de Usuario
+      description: "Formato: Como [rol], quiero [acción], para [beneficio]"
+      placeholder: "Como administrativo, quiero filtrar clientes por estado, para agilizar las búsquedas"
+    validations:
+      required: false
+
+  - type: textarea
+    id: criterios-aceptacion
+    attributes:
+      label: Criterios de Aceptación
+      description: Condiciones que deben cumplirse
+      value: |
+        - [ ] CA1: 
+        - [ ] CA2: 
+        - [ ] CA3: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: Tareas técnicas y validaciones
+      value: |
+        - [ ] Código revisado
+        - [ ] Tests unitarios
+        - [ ] Documentación actualizada
+        - [ ] 
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependencias
+      description: "Issues o PRs relacionados (ej: #123)"
+      placeholder: "- [BFF] Endpoint nueva search\n- #45 Configuración filtros"
+    validations:
+      required: false
+
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas Adicionales
+      description: Información relevante para el desarrollo
+      placeholder: Tipo, referencias, restricciones...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: estimacion
+    attributes:
+      label: Estimación (Puntos)
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "5"
+        - "8"
+        - "13"
+        - "Sin estimar"
+    validations:
+      required: false

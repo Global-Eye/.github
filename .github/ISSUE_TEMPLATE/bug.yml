@@ -1,0 +1,75 @@
+name: Bug
+description: Reportar un error o comportamiento inesperado
+title: "[BUG] APP | Módulo | Descripción"
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Completa esta plantilla para reportar el error de forma clara.
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del Error
+      description: ¿Qué está sucediendo incorrectamente?
+      placeholder: "Ej: El campo email no valida correctamente números"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducir
+    attributes:
+      label: Cómo Reproducir
+      description: Pasos para reproducir el problema
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamiento-esperado
+    attributes:
+      label: Comportamiento Esperado
+      description: ¿Qué debería suceder?
+      placeholder: "El campo debe validar solo letras y @"
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamiento-actual
+    attributes:
+      label: Comportamiento Actual
+      description: ¿Qué sucede ahora?
+      placeholder: "Acepta números y caracteres especiales"
+    validations:
+      required: true
+
+  - type: textarea
+    id: capturas
+    attributes:
+      label: Capturas de Pantalla
+      description: "Adjunta capturas que demuestren el error (opcional)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Errores en Consola
+      description: Copia los mensajes de error relevantes
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto Adicional
+      description: Navegador, versión, entorno...
+      placeholder: "Chrome 120, Entorno: producción"
+    validations:
+      required: false

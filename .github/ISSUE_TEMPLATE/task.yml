@@ -1,0 +1,48 @@
+name: Task
+description: Tarea concreta para completar una feature o bug
+title: "TASK | APP | Módulo | Descripción"
+labels: ["task"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Una tarea es un paso específico dentro de una feature o bug.
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción de la Tarea
+      description: ¿Qué hay que hacer?
+      placeholder: "Crear endpoint /api/clients/search"
+    validations:
+      required: true
+
+  - type: textarea
+    id: detalles
+    attributes:
+      label: Detalles / Requisitos
+      description: Información técnica o criterios
+      value: |
+        - Parámetros: 
+        - Respuesta: 
+        - Validaciones: 
+    validations:
+      required: false
+
+  - type: textarea
+    id: parent-issue
+    attributes:
+      label: Issue Padre
+      description: "Issue principal a la que pertenece esta tarea (ej: #123)"
+      placeholder: "#123"
+    validations:
+      required: false
+
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas / Referencias
+      description: Links, documentación o referencias
+    validations:
+      required: false
