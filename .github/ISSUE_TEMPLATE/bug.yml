@@ -1,9 +1,22 @@
 name: Bug
 description: Reportar un error o comportamiento inesperado
-title: "[BUG] APP | Módulo | Descripción"
+title: "APP | Módulo | Descripción"
 labels: ["bug"]
 
 body:
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Tipo de Issue
+      description: Selecciona el tipo de issue
+      options:
+        - Bug
+        - Feature
+        - Task
+      default: 0
+    validations:
+      required: true
+
   - type: markdown
     attributes:
       value: |

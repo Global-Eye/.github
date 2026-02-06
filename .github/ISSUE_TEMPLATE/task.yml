@@ -1,9 +1,22 @@
 name: Task
 description: Tarea concreta para completar una feature o bug
-title: "TASK | APP | Módulo | Descripción"
+title: "APP | Módulo | Descripción"
 labels: ["task"]
 
 body:
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Tipo de Issue
+      description: Selecciona el tipo de issue
+      options:
+        - Bug
+        - Feature
+        - Task
+      default: 2
+    validations:
+      required: true
+
   - type: markdown
     attributes:
       value: |
