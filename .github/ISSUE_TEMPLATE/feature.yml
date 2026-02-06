@@ -2,21 +2,9 @@ name: Feature
 description: Nueva funcionalidad a implementar
 title: "APP | Módulo | Sección | Funcionalidad"
 labels: ["feature"]
+type: feature
 
 body:
-  - type: dropdown
-    id: issue-type
-    attributes:
-      label: Tipo de Issue
-      description: Selecciona el tipo de issue
-      options:
-        - Bug
-        - Feature
-        - Task
-      default: 1
-    validations:
-      required: true
-
   - type: markdown
     attributes:
       value: |
@@ -80,20 +68,5 @@ body:
       label: Notas Adicionales
       description: Información relevante para el desarrollo
       placeholder: Tipo, referencias, restricciones...
-    validations:
-      required: false
-
-  - type: dropdown
-    id: estimacion
-    attributes:
-      label: Estimación (Puntos)
-      options:
-        - "1"
-        - "2"
-        - "3"
-        - "5"
-        - "8"
-        - "13"
-        - "Sin estimar"
     validations:
       required: false
