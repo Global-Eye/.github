@@ -1,0 +1,13 @@
+{
+  "timezone": "Europe/Madrid",
+  "hora_informe_local": "19:00",
+  "email": {
+    "to": ["prodrigo@albertia.es"],
+    "cc": ["info@globaleye.es", "administracion@globaleye.es", "rrhh@globaleye.es"],
+    "asunto_diario": "Quantum · Avance diario · {fecha}",
+    "asunto_viernes": "Quantum · Avance diario y resumen semanal · {fecha}",
+    "asunto_sin_actividad": "Quantum · Sin actividad de desarrollo · {fecha}"
+  },
+  "ventana_tendencia_dias": 30,
+  "repos_excluidos": []
+}
