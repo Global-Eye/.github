@@ -1,0 +1,33 @@
+{
+  "daily-2026-09-03": {
+    "relevante": [
+      ["resi", "El plan de cuidados ya exige una valoración cerrada antes de poder sellarse, y el borrador solo lo abre el técnico de referencia del residente. Además, las respuestas del cuestionario de conocimiento de la persona se vuelcan automáticamente a Historia de vida y Preferencias, sin pisar lo que ya estaba registrado."],
+      ["infra", "Día de cierre de la ficha de Instalaciones: modo lectura y edición, acceso a la ficha de maquinaria desde el listado y exportación a Excel, PDF e impresión. Se corrige que varios campos de la instalación no se guardaban al editar."],
+      ["crm", "Dos correcciones preparadas a última hora (16:30–17:00), integradas al día siguiente: el campo «Actualizado por» en admisiones y el gráfico del informe de ingresos que fallaba al pintarse."],
+      ["plataforma", "Las especificaciones se publican el mismo día que el código: edición de instalaciones y botones de exportación quedan documentados en el monorepo."]
+    ],
+    "productos": {
+      "resi": "Cuatro entregas de Atención y Vida en un solo día: volcado del cuestionario a la historia de vida (idempotente: un segundo intento se rechaza), alertas por actividades «no disfrutadas» de forma consecutiva, sellado del plan condicionado a una valoración cerrada, y ciclo de vida del borrador del plan. Todo con pruebas y documentación actualizadas.",
+      "infra": "Instalaciones queda cerrada en el frontend: ficha en modo lectura y edición, ficha de maquinaria desde el listado, exportación Excel/PDF/impresión y corrección del guardado de campos. El backend no integró nada hoy; su trabajo sigue en ramas abiertas.",
+      "crm": "Trabajo de última hora sin integrar hoy: «Actualizado por» en los registros de admisión y renderizado diferido del gráfico de informes para evitar el error de pintado. Ambos se integraron el viernes por la mañana.",
+      "plataforma": "Especificaciones OpenSpec de la edición de instalaciones y de los botones de exportación, publicadas el mismo día que el código que documentan."
+    }
+  },
+  "weekly-2026-09-04": {
+    "relevante": [
+      ["resi", "Semana grande de Atención y Vida: intimidad y confidencialidad, solicitudes de actividades, perfiles del PAI, agenda con convocatorias, volcado del cuestionario a la historia de vida y el ciclo completo de sellado del plan. 31 funcionalidades cerradas y 21 entregas, casi todo de una sola persona."],
+      ["infra", "Instalaciones pasa de esqueleto a módulo completo en cinco días: mantenimiento preventivo, cumplimiento legal, ubicación y energía, máquinas asociadas, ficha en lectura y edición, exportación y biblioteca compartida con Maquinaria. Configuración se divide en Grupo Empresarial y Centro."],
+      ["crm", "Semana solo de correcciones: tarifas limitadas a los centros autorizados del usuario (seguridad), persistencia del estado «leída» en alertas, «Actualizado por» en admisiones y el gráfico de informes. Ninguna funcionalidad nueva."],
+      ["plataforma", "17 entregas de especificaciones en el monorepo, una por cada funcionalidad de Infraestructuras: la documentación avanza al ritmo del código. Layout Lib añade persistencia del submenú activo para todas las apps."],
+      ["identity", "Un único ajuste de diseño el lunes. Tres PRs de integración con Navision llevan abiertos desde el 27 de agosto sin revisión."]
+    ],
+    "productos": {
+      "resi": "Historia y preferencias (rutinas, capacidades, vida afectiva, valores, hitos, trayectoria, intimidad), solicitudes de actividades, perfiles participantes del PAI, agenda de Atención y Vida, volcado del cuestionario y ciclo de sellado del plan. Ritmo muy alto y concentrado: David Domene firma 40 de los 46 registros; Ángel Torres conectó tres pestañas al backend lunes y martes.",
+      "infra": "El módulo de Instalaciones se completa en la semana: alta por secciones, máquinas asociadas, ficha y edición, exportación y biblioteca compartida. Configuración dividida por alcance. En Flota: validaciones de año e ITV, preventivos y fotos de vehículo. Cuatro personas con reparto equilibrado. Queda abierto el error de la fecha de próximo preventivo en el listado (PR #157).",
+      "crm": "Mantenimiento: seis correcciones cerradas, una de ellas de seguridad (consulta de tarifas restringida a centros autorizados). Sin funcionalidad nueva. Dos PRs de integración con Navision llevan 8 y 15 días abiertos.",
+      "identity": "Un ajuste de diseño de la pantalla Navision el lunes. Tres PRs de Navision (código de departamento en centros) esperan revisión desde el 27 de agosto.",
+      "team": "Sin actividad esta semana. Última actividad registrada: 26 de agosto.",
+      "plataforma": "Especificaciones OpenSpec al día: 17 integraciones que documentan cada funcionalidad de Infraestructuras entregada esta semana. Layout Lib: el menú lateral recuerda el submenú activo al navegar."
+    }
+  }
+}
